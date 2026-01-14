@@ -1,4 +1,4 @@
-# Spotify-like Database Management System
+# Spotify-like Database Management System (University Project)
 
 A full-stack database application designed to simulate the core structure and functionality of a music streaming service like Spotify. This project demonstrates the end-to-end process of database design (ERD, Relational Schema), normalization (3NF), and implementation using PostgreSQL and Python (Flask).
 
