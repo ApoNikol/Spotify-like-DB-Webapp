@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Add a Song to a Playlist</h1>
+        <a href="index.html">Back to Main Menu</a>
+    </header>
+    <main>
+        <form id="add-song-form">
+            <!-- Song Name -->
+            <label for="song-name">Song Name:</label>
+            <input type="text" id="song-name" name="song-name" required>
+
+            <!-- Artist Name -->
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist" required>
+
+            <!-- Duration -->
+            <label for="duration">Duration (HH:MM:SS):</label>
+            <input type="text" id="duration" name="duration" placeholder="00:03:30" required>
+
+            <!-- Release Date -->
+            <label for="release-date">Release Date:</label>
+            <input type="date" id="release-date" name="release-date" required>
+
+            <!-- Playlist Selection -->
+            <label for="playlist">Select Playlist:</label>
+            <select id="playlist" name="playlist" required>
+                <!-- Playlist options will be dynamically populated by JavaScript -->
+            </select>
+
+            <button type="submit">Add Song</button>
+        </form>
+    </main>
+
+    <script src="scripts/add_song.js"></script>
+</body>
+</html>

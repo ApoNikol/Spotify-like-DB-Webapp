@@ -1,0 +1,48 @@
+/* Body and general layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #1db954;
+    color: white;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+/* Button styling */
+.options button, .search button {
+    margin: 10px; /* Add margin around buttons */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1db954; /* Spotify Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px; /* Set a fixed width to avoid crowding */
+}
+
+.options button:hover, .search button:hover {
+    background-color: #1ed760; /* Slightly lighter green */
+}
+
+/* Prevent overlap if layout is broken */
+#playlists-container {
+    margin-top: 20px;
+}

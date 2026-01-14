@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <h1>Spotify Simulation</h1>
+    </header>
+    <main>
+        <h2>Choose an Action</h2>
+        <div class="options">
+            <button onclick="navigateTo('add_song.html')">Add a Song</button>
+            <button onclick="navigateTo('add_playlist.html')">Add a Playlist</button>
+        </div>
+        <div class="search">
+            <button onclick="navigateTo('navigation.html')">Search Playlists & Songs</button>
+        </div>
+        <div id="playlists-container"></div>
+    </main>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

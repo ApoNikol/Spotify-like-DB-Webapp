@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #1db954;
+    color: white;
+    padding: 1rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+form {
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button {
+    background: #1db954; /* Green for normal buttons */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #14843b;
+}
+
+/* Playlist container and playlist items */
+#playlists-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increase gap between playlists */
+    margin-top: 20px;
+    align-items: center; /* Center the playlists */
+}
+
+/* Each playlist item */
+.playlist {
+    background-color: #ffffff; /* White background for playlists */
+    padding: 15px; /* Padding around playlist content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    position: relative; /* Important for positioning the delete button */
+    width: 90%; /* Ensure the playlists do not stretch too much */
+    max-width: 500px; /* Limit maximum width */
+    transition: transform 0.2s ease-in-out; /* Animation for hover effect */
+}
+
+.playlist:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Title of the playlist */
+.playlist h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Song list inside the playlist */
+.songs {
+    margin-top: 10px;
+}
+
+.song {
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.song h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Specific styling for the delete button */
+.delete-btn {
+    background-color: red; /* Red color for delete button */
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+.song .delete-song-btn {
+    background-color: red; /* Red color for the delete button */
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 12px; /* Smaller font size for song delete buttons */
+    cursor: pointer;
+    border-radius: 50%; /* Circular shape */
+    margin-left: 10px; /* Space between the button and song title */
+    transition: background-color 0.3s;
+}
+
+.song .delete-song-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Fade-out effect for deletion */
+.playlist.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
